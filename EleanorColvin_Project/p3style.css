@@ -25,6 +25,9 @@ body{
     justify-content: center;
    
 }
+a{
+    text-decoration: none;
+}
 #sidebar{
     background-color:#8a7882;
     grid-row: span 8;

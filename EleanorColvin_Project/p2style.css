@@ -30,6 +30,9 @@ body{
     grid-row: span 8;
 
 }
+a{
+    text-decoration: none;
+}
 #main{
     background-color: aliceblue;
     grid-column: span 4;
