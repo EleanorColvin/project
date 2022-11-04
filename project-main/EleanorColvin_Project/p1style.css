@@ -8,6 +8,7 @@ body{
     grid-gap: 10px;
     width: 100%;
     height: 100%;
+    justify-items: stretch;
 }
 #navbar{
     background-color:#857687;
@@ -52,9 +53,19 @@ a{
 #photogrid{
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(5, 1fr);
     grid-gap: 5px;
+    margin: 5px;
 }
 img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+
+}
+img:hover{
+    transform: scale(1.25);
+
 }
