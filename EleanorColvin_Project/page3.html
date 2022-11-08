@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "standardStyle.css">
+    <script>
+        var lastInput  = "";
+        function printInput() {
+        document.getElementById('text').innerHTML = 
+                    lastInput+"\n"+document.getElementById("input").value;
+        lastInput = lastInput+"\n"+document.getElementById("input").value;
+    }
+
+    </script>
+</head>
+<body>
+    <div id = grid>
+        <div id = navbar>
+            <a class = page href = "index.html">Home</a>
+            <a class = page href = "page1.html">Page 1</a>
+            <a class = page hREF = "page2.html">Page 2</a>
+        </div>
+        <div id = title> 
+            <h1>Make a Recommendation</h1>
+        </div>
+        <div id = sidebar>
+        </div>
+        <div id = main>
+            <p>If you don't need any book recommendations, try making one!</p>
+            <form>
+                <label><b>Enter a Book Rec: </b></label>
+                <input type="text" name="message" id="input">
+              </form>
+            
+              <input type="submit" onclick="printInput();"><br/>
+              <br/><label>Your Recs: </label>
+              <p><span id='text'></span></p>
+            
+        </div> 
+        <div id = footer>
+    
+        </div>
+    </div>  
+</body>
+</html>

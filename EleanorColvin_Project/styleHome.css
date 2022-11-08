@@ -1,0 +1,13 @@
+#main{
+    background-image: url("images/bookstore.jpg");
+}
+#flexBox{
+    display:flex;
+    align-items: center;
+    margin: auto;
+}
+img{
+    width: 100px;
+    margin: 10px;
+    border: 2px solid black;
+}
