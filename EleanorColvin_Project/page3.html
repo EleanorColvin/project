@@ -10,8 +10,8 @@
         var lastInput  = "";
         function printInput() {
         document.getElementById('text').innerHTML = 
-                    lastInput+"\n"+document.getElementById("input").value;
-        lastInput = lastInput+"\n"+document.getElementById("input").value;
+                    lastInput+" - "+document.getElementById("input").value;
+        lastInput = lastInput+" - "+document.getElementById("input").value;
     }
 
     </script>
@@ -29,7 +29,7 @@
         <div id = sidebar>
         </div>
         <div id = main>
-            <p>If you don't need any book recommendations, try making one!</p>
+            <h3>If you don't need any book recommendations, try making one!</h3>
             <form>
                 <label><b>Enter a Book Rec: </b></label>
                 <input type="text" name="message" id="input">
@@ -38,8 +38,35 @@
               <input type="submit" onclick="printInput();"><br/>
               <br/><label>Your Recs: </label>
               <p><span id='text'></span></p>
+
+              <div id = table>
+              <h3>More resources: </h3>
+              <table>
+                <tr>
+                    <th>Youtube Channels</th>
+                    <th>Websites</th>
+                    <th>Articles</th>
+                </tr>
+                <tr>
+                    <td><a href = "https://www.youtube.com/c/EpicReads/videos">Epic Reads</a></td>
+                    <td><a href = "https://read.gov/adults/">Library of Congress</a></td>
+                    <td><a href = "https://bookriot.com/how-to-start-reading/">Starting to read</a></td>
+                </tr>
+                <tr>
+                    <td><a href = "https://www.youtube.com/c/booksandquills/videos">booksandquills of Congress</a></td>
+                    <td><a href = "https://www.bookfinder.com/">BookFinder</a></td>
+                    <td><a href = "https://www.healthline.com/health/benefits-of-reading-books#bypass-tv">Why Read?</a></td>
+                </tr>
+                <tr>
+                    <td><a href = "https://www.youtube.com/c/PeruseProject/videos">PeruseProject</a></td>
+                    <td><a href = "https://www.nasa.gov/mission_pages/station/research/researcher_guide">NASA Researchers Guides</a></td>
+                    <td><a href = "https://fs.blog/reading/">Reading Better</a></td>
+                </tr>
+              </table>
+            </div>
             
         </div> 
+
         <div id = footer>
     
         </div>
